@@ -1,0 +1,150 @@
+/* Page container with soft pastel green */
+.AboutUs-div {
+  background-color: #d8e6d1; /* light pastel green */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Top section with creamy off-white + subtle green gradient */
+.TopSection {
+  width: 100%;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #f9f7f1, #d4e2c7); /* creamy pale with a soft green */
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(150, 165, 140, 0.3);
+  text-align: center;
+  border: 2px solid #a7b48c; /* muted green border */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Add subtle strawberry glow highlight top-right corner */
+.TopSection::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: #e55353; /* strawberry red */
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+/* Text box with creamy pastel tone */
+.TextBox {
+  background-color: #fff9f0; /* warm cream */
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(165, 180, 140, 0.25);
+  color: #556b2f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 400;
+  border-left: 6px solid transparent;
+  position: relative;
+}
+
+/* Add strawberry colored left border on hover for TextBox */
+.TextBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(134, 149, 115, 0.45);
+  border-left-color: #e55353;
+}
+
+/* Heading with dusty green + soft shadows */
+.Heading {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #7a8454; /* muted olive green */
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+  padding-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(255 255 255 / 0.7);
+}
+
+/* Strawberry underline on heading */
+.Heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e55353; /* strawberry red */
+  border-radius: 2px;
+}
+
+/* Paragraph with soft olive tone */
+.Paragraph {
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: #6b7b43; /* softer olive green */
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+/* Emoji with pastel coral and strawberry accent */
+.Paragraph span.emoji {
+  font-size: 1.5em;
+  color: #e55353; /* strawberry red for emojis to pop */
+  vertical-align: middle;
+  margin: 0 3px;
+}
+
+/* Bottom section with light cream and greenish border */
+.BottomSection {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f7f2; /* creamy off-white */
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 5px 15px rgba(167, 180, 140, 0.15);
+  margin-top: 30px;
+  border-top: 2px solid #a7b48c;
+  position: relative;
+}
+
+/* Small strawberry accent circle in bottom section */
+.BottomSection::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: #e55353;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .TopSection {
+    padding: 25px 20px;
+  }
+  
+  .TextBox {
+    padding: 25px;
+  }
+  
+  .Heading {
+    font-size: 1.8em;
+  }
+  
+  .Paragraph {
+    font-size: 1.05em;
+  }
+}

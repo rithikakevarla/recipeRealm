@@ -1,0 +1,16 @@
+.bg-body-tertiary{
+    width: 40vw;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    align-items: center;
+    /* display: none;
+    visibility: hidden; */
+}
+.c1{
+    padding-left: 0px;
+}
+/* .bg-body-tertiary .expanded{
+    width: 30vw;
+    display: none;
+    visibility: visible;
+} */

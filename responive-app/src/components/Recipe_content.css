@@ -1,0 +1,52 @@
+.container #recipes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container #recipes > *:nth-child(4),
+.container #recipes > *:nth-child(5) {
+grid-column: span 1;
+}
+.Modal {
+    z-index: 1100; 
+}
+/* Modal body styling */
+.modal-body {
+    background-color: #f9f5ee; /* soft cream */
+    color: #3c3a32; /* subtle earthy brown */
+    font-size: 1.05rem;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  /* Section headers like Description, Ingredients, Instructions */
+  .modal-body h5 {
+    margin-top: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5a4b3e; /* deeper muted brown */
+    border-left: 4px solid #d2c0a8;
+    padding-left: 10px;
+  }
+  
+  /* Close button style */
+  .modal-footer .btn-primary {
+    background-color: #b5c99a; /* soft green, matches your panel */
+    border: none;
+    font-weight: 600;
+    color: #3c3a32;
+    padding: 0.5rem 1.4rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #9db88f; /* slightly darker green for hover */
+    transform: scale(1.03);
+  }
+  

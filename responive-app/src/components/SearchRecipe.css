@@ -1,0 +1,41 @@
+#search-card {
+  width: 480px;
+  padding: 22px 20px 18px;
+  background: rgba(255, 245, 247, 0.96);
+  border: 3px dashed #a8c686;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(168, 200, 130, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.search-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.7rem;
+  color: #6c8b3e;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px #fbe8e8;
+}
+
+.search-tagline {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+  color: #7d3939;
+  background-color: #fff6f6;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(255, 194, 204, 0.2);
+  margin-bottom: 14px;
+}
+.SearchRecipe-div {
+  background-color: #fff0f3;
+  min-height: 10vh;
+  padding-top: 40px; /* was 60px */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}

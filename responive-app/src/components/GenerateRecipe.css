@@ -1,0 +1,97 @@
+.Generate-Recipe {
+    height: auto;
+    background-color: #fff0f3; /* soft pastel pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* navbar offset */
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    color: #6c8b3e; /* green text for harmony */
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 190, 200, 0.2);
+    border-radius: 18px;
+    margin: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Generate-Recipe.expanded {
+    height: auto;
+}
+
+.ingredient-button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #a8c686;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(160, 200, 120, 0.2);
+    transition: background-color 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ingredient-button:hover {
+    background-color: #91b36b;
+}
+
+#dismissables {
+    width: fit-content;
+}
+
+#selected_ingred {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+/* BOT STYLES */
+.bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff94a3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(255, 148, 163, 0.4);
+    z-index: 1200;
+    transition: background-color 0.3s ease;
+}
+
+.bot-button:hover {
+    background-color: #ff6b85;
+}
+
+.bot-button i {
+    font-size: 24px;
+}
+
+.bot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background: rgba(255, 245, 247, 0.96);
+    border: 2px dashed #a8c686;
+    box-shadow: 0 10px 25px rgba(168, 200, 130, 0.3);
+    padding: 20px;
+    border-radius: 18px;
+    z-index: 1000;
+    color: #6c8b3e;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}

@@ -1,0 +1,99 @@
+.credit-page {
+  text-align: center;
+  padding: 80px 20px;
+  background: #d8e6d1; /* light pastel green */
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  color: #3e521f; /* darker olive green for clear text */
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Strawberry pink heading vibe */
+.credit-page h1 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  color: #e55353; /* strawberry red */
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 6px rgba(229, 83, 83, 0.45);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Members container with gentle green border top */
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  border-top: 3px solid #121d0a; /* muted green */
+  padding-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Member card with creamy pastel tone and subtle strawberry shadow */
+.member {
+  background: #71915a; /* warm cream */
+  border-radius: 20px;
+  padding: 25px;
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 8px 20px rgba(165, 180, 140, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #3e521f; /* DARKER olive green text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Hover effect with strawberry border and shadow pop */
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(229, 83, 83, 0.5);
+  border-color: #e55353;
+  color: #2f3a11; /* even darker on hover */
+}
+
+/* Member images with pastel background and strawberry border */
+.member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  background-color: #90d252; /* subtle green pastel bg behind images */
+  display: block;
+  border: 4px solid #df4c4f;
+  box-shadow: 0 0 10px 3px rgba(229, 83, 83, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Zoom image on hover */
+.member:hover img {
+  transform: scale(1.05);
+}
+
+/* Member name styling */
+.member-name {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #3e521f;
+  text-shadow: 0 0 3px rgba(186, 76, 76, 0.7);
+}
+
+/* Member role or description */
+.member-role {
+  font-size: 1rem;
+  color: #7a8454; /* muted olive for secondary text */
+  text-align: center;
+  font-weight: 400;
+}
