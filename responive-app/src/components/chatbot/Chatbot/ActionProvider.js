@@ -11,7 +11,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children,json_obj}) =>
     const description=json_obj.description
     const greet = async (msg) => {
         try {
-            const response = await fetch('https://525b-34-168-162-31.ngrok-free.app/chat', {
+            const response = await fetch('https://6b80-34-125-249-196.ngrok-free.app/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

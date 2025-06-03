@@ -1,7 +1,74 @@
-.card{
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  .card .img{
-    border-radius: 25px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0f3; /* strawberry milk background */
+  color: #4b2e2e; /* soft cocoa text */
+}
+
+.card {
+  border-radius: 25px;
+  background: #fff6f8; /* lighter strawberry milk */
+  border: 3px solid #df4c4f; /* bold strawberry red border */
+  box-shadow:
+    0 10px 25px rgba(223, 76, 79, 0.3),   /* strawberry red shadow */
+    0 6px 10px rgba(149, 211, 165, 0.25); /* soft pastel green shadow */
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 350px;  /* optional max width to keep it neat */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 40px rgba(223, 76, 79, 0.6),
+    0 12px 20px rgba(149, 211, 165, 0.5);
+}
+
+.cute-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  color: #df4c4f; /* strawberry red */
+  text-shadow: 1px 1px 5px rgba(223, 76, 79, 0.4);
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.card-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  color: #4a6b47; /* pastel leafy green */
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+button.btn-primary {
+  background-color: #94d3a5; /* pastel green */
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 0.6rem 1.3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(149, 211, 165, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-self: center;
+  max-width: 150px;
+  width: 100%;
+}
+
+button.btn-primary:hover {
+  background-color: #7cbc85; /* darker green */
+  box-shadow: 0 6px 12px rgba(149, 211, 165, 0.7);
+}

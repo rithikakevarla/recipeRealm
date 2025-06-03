@@ -1,52 +1,70 @@
 .Bot {
     position: fixed;
     bottom: 100px;
-    right: 20px; 
-    z-index: 1300; 
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    right: 20px;
+    z-index: 1300;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #AA076B;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #61045F, #AA076B);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #61045F, #AA076B);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #df4c4f, #81c784);
 }
 
 .react-chatbot-kit-chat-container {
     width: 400px;
 }
 
+/* Bot message */
 .react-chatbot-kit-chat-bot-message {
     margin-left: 10px;
-}
-
-.react-chatbot-kit-chat-bot-message {
-    background-color: #007bff;
+    background-color: #df4c4f;
+    color: white;
 }
 
 .react-chatbot-kit-chat-bot-message-arrow {
-    border-right: 8px solid #007bff;
+    border-right: 8px solid #df4c4f;
 }
 
+/* User message */
+.react-chatbot-kit-user-chat-message {
+    margin-right: 10px;
+    background-color: #81c784;
+    color: white;
+}
+
+.react-chatbot-kit-user-chat-message-arrow {
+    border-left: 8px solid #81c784;
+}
+
+/* Send button */
 .react-chatbot-kit-chat-btn-send {
-    background-color: #007bff;
+    background-color: #81c784;
+    color: white;
+    font-weight: bold;
 }
 
+/* Initial avatar/icon */
 .ADE {
-    background-color: #AA076B;
+    background-color: #df4c4f;
+    color: white;
     width: 40px;
     height: 40px;
     display: grid;
     place-items: center;
-    color: white;
     border-radius: 100%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(223, 76, 79, 0.4);
 }
 
+/* Buttons */
 .start-btn {
-    background-color: #61045F;
+    background-color: #df4c4f;
     color: white;
     padding: .5rem 1rem;
     border-radius: 999px;
@@ -59,6 +77,7 @@
     margin-left: 1rem;
 }
 
+/* Image component */
 .img-component {
     margin-left: 3rem;
     position: relative;
@@ -67,8 +86,7 @@
 .img-container {
     width: 185px;
     height: 185px;
-    border: 2px solid #61045F;
-    /* overflow: hidden; */
+    border: 2px solid #df4c4f;
     border-radius: 5px;
 }
 
@@ -83,12 +101,13 @@
     top: 0;
     left: 0;
     border-radius: 5px;
-    background-color: #61045F;
+    background-color: #81c784;
     color: white;
     text-decoration: none;
     padding: .5rem 1rem;
+    font-weight: bold;
 }
 
 .img-component a:hover {
-    background-color: #61045f5e;
+    background-color: #a5d6a7;
 }
